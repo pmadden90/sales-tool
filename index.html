@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Conversation Tool</title>
+	<link rel='stylesheet' href='css/main.css'/>
+	<script type="text/javascript" src="js/checkbox.js"></script>
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" 
+	rel="stylesheet" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" 
+	crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.2.1.js"
+	integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+	crossorigin="anonymous"></script>
+	<link href='https://fonts.googleapis.com/css?family=Dosis' rel='stylesheet' type='text/css'>
+	
+</head>
+<body>
+	<div class="row">
+		<h2>Customer called to...</h2>
+	</div>
+	<div class="row">
+		<input id="cb2" type="checkbox" name="vehicle" value="cancel-account" onclick="updatebox()" /> cancel account <br />
+		<input id="cb3" type="checkbox" name="vehicle" value="remove-sports" onclick="updatebox()" /> remove sports<br />
+		<input id="cb4" type="checkbox" name="vehicle" value="remove-cinema" onclick="updatebox()" /> remove cinema<br />
+		<input id="cb5" type="checkbox" name="vehicle" value="remove-sports-and-cinema" onclick="updatebox()" /> remove sports and cinema <br />
+		<input id="cb6" type="checkbox" name="vehicle" value="remove-broadband" onclick="updatebox()" /> remove broadband<br />
+		<input id="cb7" type="checkbox" name="vehicle" value="remove-" onclick="updatebox()" /> remove --<br />
+		<input id="cb8" type="checkbox" name="vehicle" value="enquire-bill" onclick="updatebox()" /> enquire about bills<br />
+		<input id="list" type="text" name="list" />	
+	</div>
+
+	<div id="panel">
+		<div class="container">
+			<div class="row">
+			    <div class="container col-md-3">
+			        <div class="sky-q-box box"></div>
+			    </div>
+			    <div class="container col-md-3">
+			        <div class="uod-box box"></div>
+			    </div>
+			    <div class="container col-md-3">
+			        <div class="sky-sports-box box"></div>
+			    </div>
+			    <div class="container col-md-3">
+			        <div class="sky-cinema-box box"></div>
+			    </div>
+			</div>
+			
+			<div class="row">
+			    <div class="container col-md-3">
+			        <div class="sky-arts-box box"></div>
+			    </div>
+			    <div class="container col-md-3">
+			        <div class="sky-atlantic-box box"></div>
+			    </div>
+			    <div class="container col-md-3">
+			        <div class="sky-witness-box box"></div>
+			    </div>
+			    <div class="container col-md-3">
+			        <div class="sky-kids-box box"></div>
+			    </div>
+			</div>
+			
+			<div class="row">
+			    <div class="container col-md-3">
+			        <div class="sky-go-box box"></div>
+			    </div>
+			    <div class="container col-md-3">
+			        <div class="sky-go-box box"></div>
+			    </div>
+			    <div class="container col-md-3">
+			        <div class="sky-go-box box"></div>
+			    </div>
+			    <div class="container col-md-3">
+			        <div class="sky-go-box box"></div>
+			    </div>
+			</div>
+			
+		</div>
+	</div>
+	
+	<div class="row">
+	    <div class="notebox"></div>    
+	</div>
+	
+	<div class="row">
+	    <div class="superButton makeOrange">Reset</div>    
+	</div>
+	
+	<script src="js/script2.js"></script>
+</body>
+</html>

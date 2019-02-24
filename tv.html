@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Conversation Tool</title>
+    <link rel='stylesheet' href='css/main.css' />
+    <link rel='stylesheet' href='scss/main.scss' />
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Dosis+Ubuntu' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="js/checkbox.js"></script>
+</head>
+
+<body>
+    <!--
+    <div class="call-purpose">
+		<h2>Customer called to...</h2>
+	</div>
+	<div class="row call-checkboxes">
+	    <div class="col-md-12">
+	        <input id="cb2" type="checkbox" name="vehicle" value="cancel-account" onclick="updatebox()" /> cancel account <br />
+		    <input id="cb3" type="checkbox" name="vehicle" value="remove-sports" onclick="updatebox()" /> remove sports<br />
+		    <input id="cb4" type="checkbox" name="vehicle" value="remove-cinema" onclick="updatebox()" /> remove cinema<br />
+		    <input id="cb5" type="checkbox" name="vehicle" value="remove-sports-and-cinema" onclick="updatebox()" /> remove sports and cinema <br />    
+	    </div>
+	</div>
+	<div class="row call-checkboxes">
+	    <div class="col-md-12">
+	       <input id="cb6" type="checkbox" name="vehicle" value="remove-broadband" onclick="updatebox()" /> remove broadband<br />
+	       <input id="cb7" type="checkbox" name="vehicle" value="remove-" onclick="updatebox()" /> remove --<br />
+	       <input id="cb8" type="checkbox" name="vehicle" value="enquire-bill" onclick="updatebox()" /> enquire about bills<br />
+	       <input id="cb9" type="checkbox" name="vehicle" value="returning" onclick="updatebox()" /> returning from competitor<br />
+	   </div>
+	</div>
+	<div class="check-textbox">	
+		<input id="list" type="text" name="list" />	
+	</div>
+    -->
+
+    <div class="row three-columns">
+        <div class="col-md-4 the-hardware">
+            <h2>Hardware</h2>
+            <div class="card stream1">
+                <img class="card_image" src="media/img/sky-q-logo2tb.jpg" alt="Sky Q Two Terabyte">
+                <div class="card_bottom">
+                    <ul style="display: none;">
+                        <li>Record 6 shows while watching a 7th at the same time</li>
+                        <li>1180 hours SD recording/350 hours HD recording</li>
+                        <li>UHD ready</li>
+                        <li>Voice control remote included (and 'Find My Remote' feature)</li>
+                        <li>€179 existing customers (or €110 with minibox and subscription)</li>
+                    </ul>
+                    <button class="bottom_button">Show</button>
+                </div>
+            </div>
+            <div class="card stream1">
+                <img class="card_image" src="media/img/sky-q-logo1tb.jpg" alt="Sky Q One Terabyte">
+                <div class="card_bottom">
+                    <ul style="display: none;">
+                        <li>Record 3 shows while watching a 4th at the same time</li>
+                        <li>500 hours SD recording/150 hours HD recording</li>
+                        <li>€149 for existing customers (or €75 with minibox and subscription)</li>
+                    </ul>
+                    <button class="bottom_button">Show</button>
+                </div>
+            </div>
+            <div class="card stream1">
+                <img class="card_image" src="media/img/qms.png" alt="Sky Q Minibox">
+                <div class="card_bottom">
+                    <ul style="display: none;">
+                        <li>€17.50 per month</li>
+                        <li>Wireless multiscreen which allows you watch separate content</li>
+                        <li>Record on one box, watch on another if you'd like</li>
+                        <li>Plug and play (can easily be moved to different room)</li>
+                    </ul>
+                    <button class="bottom_button">Show</button>
+                </div>
+            </div>
+
+            <div class="card stream3">
+                <img class="card_image" src="media/img/sky-plus.jpg" alt="Sky Plus">
+                <ul style="display: none;">
+                    <li>185 hours SD recording/60 hours HD recording</li>
+                    <li>On Demand content available (subscription dependent) if connected to broadband</li>
+                </ul>
+                <button class="bottom_button">Show</button>
+            </div>
+            <div class="card stream1">
+                <img class="card_image" src="media/img/qms.png" alt="Sky Plus Multiscreen">
+                <div class="card_bottom">
+                    <ul style="display: none;">
+                        <li>€17.50 per month per box</li>
+                    </ul>
+                    <button class="bottom_button">Show</button>
+                </div>
+            </div>
+            <div class="card stream1">
+                <img class="card_image" src="media/img/sky-hub.png" alt="Sky Hub">
+                <div class="card_bottom">
+                    <ul style="display: none;">
+                        <li>Our Sky Q Hub uses the latest Wi-Fi technology to deliver up to 3x faster speeds than the previous generation of routers</li>
+                        <li>Our Sky Smart Signal Technology optimises your Wi-Fi to ensure you always get the best connection</li>
+                        <li>Connect up to 64 devices at once so you can share, stream and download all at the same time</li>
+                    </ul>
+                    <button class="bottom_button">Show</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 the-packages">
+            <h2>Packages</h2>
+            <div class="card stream2">
+                <img class="card_image" src="media/img/sky-entertainment-logo-2017.jpg" alt="Sky Entertainment">
+                <ul style="display: none;">
+                    <li>Sky Entertainment is the new standard pack for Sky customers</li>
+                    <li>€32 in 12 month contract/€37 outside of contract</li>
+                    <li>Over 350 channels - including Sky One, Sky Atlantic, Witness, Arts</li>
+                    <li>Includes documentary channels</li>
+                </ul>
+                <button class="bottom_button">Show</button>
+            </div>
+            <div class="card stream2">
+                <img class="card_image" src="media/img/sky_original_bundle.png" alt="Sky Original">
+                <ul style="display: none;">
+                    <li>€32 per month</li>
+                    <li>270 channels</li>
+                </ul>
+
+                <button class="bottom_button">Show</button>
+            </div>
+            <div class="card stream2">
+                <img class="card_image" src="media/img/variety-bundle.png" alt="Sky Variety">
+                <ul style="display: none;">
+                    <li>€39 per month.</li>
+                    <li>Sky Original bundle plus 70 additional channels</li>
+                    <li>Includes kids, music and documentary channels (and F1)</li>
+                </ul>
+                <button class="bottom_button">Show</button>
+            </div>
+            <div class="card stream3">
+                <img class="card_image" src="media/img/sky-sports.png" alt="Sky Sports">
+                <ul style="display: none;">
+                    <li>€40 per month (or €49 combined with Cinema)</li>
+                    <li>11 dedicated sports channels - including football, golf, F1, cricket</li>
+                    <li>Also home to three of US's major sports - NBA, NFL and MLS</li>
+                    <li>Exclusive GAA matches</li>
+                    <li>159 Premier League games</li>
+                </ul>
+                <button class="bottom_button">Show</button>
+            </div>
+            <div class="card stream1">
+                <img class="card_image" src="media/img/sky-cinema.jpg" alt="Sky Cinema">
+                <ul style="display: none;">
+                    <li>€29 per month (or €49 combined with Sports)</li>
+                    <li>11 dedicated channels - 9 permanent and 2 pop-ups</li>
+                    <li>Over 1200 movies to watch on demand</li>
+                    <li>New premiere every day</li>
+                </ul>
+
+                <button class="bottom_button">Show</button>
+            </div>
+            <div class="card stream1">
+                <img class="card_image" src="media/img/BoxSets.jpg" alt="Sky Ultimate On Demand">
+                <ul style="display: none;">
+                    <li>€16 per month</li>
+                    <li>Access over 500 boxsets and Netflix</li>
+                    <li>Use existing Netflix profile</li>
+                    <li>Currently 15% cheaper combined than having both seperately</li>
+                    <li>Available currently - Game Of Thrones, Handmaid's Tale, Westworld, Nightflyers, Atlanta, Veep, You, The Crown, The Punisher, Umbrella Academy (any other Netflix series you'd like to mention)</li>
+                </ul>
+
+                <button class="bottom_button">Show</button>
+            </div>
+
+        </div>
+        <div class="col-md-4 the-comp">
+            <h2>Competitors</h2>
+            <div class="card stream2">
+                <img class="card_image" src="media/img/vm-logo.jpg" alt="Virgin Media">
+                <ul style="display: none;">
+                    <li>No Sky Atlantic</li>
+                    <li>€50 installation charge when you add tv to broadband</li>
+                    <li>Prices do not include Sky Sports/Cinema</li>
+                    <li>ITV channels cannot be added</li>
+                    <li>Freedom TV - €1 per channel </li>
+                    <li>Mix TV - €30 with no Sky Atlantic, no Disney Channels or Cartoon Network, no documentary channels except Discovery and DMax, no Gold or SyFy</li>
+                    <li>Full House TV - €35 with no Sky Atlantic </li>
+                </ul>
+                <button class="bottom_button">Show</button>
+            </div>
+            <div class="card stream2">
+                <img class="card_image" src="media/img/eir-logo.jpg" alt="Eirl">
+                <ul style="display: none;">
+                    <li>Eir TV runs over the internet which means it is not available everywhere</li>
+                    <li>Internet tv means it can reduce speed of other devices on network</li>
+                    <li>If any issues with broadband - no tv</li>
+                    <li>Same recording capabilities as Sky boxes from ten years ago</li>
+                    <li>Have to be broadband customer aswell</li>
+                    <li>ITV channels cannot be added</li>
+                    <li>Eir Vision Essential - no Sky One, Sky Two, Sky Atlantic, Sky Witness or Sky Arts</li>
+                    <li>Eir Vision Experience (€9.99 extra) - and still no Sky One, Sky Two, Sky Atlantic, Sky Witness or Sky Arts</li>
+                </ul>
+
+                <button class="bottom_button">Show</button>
+            </div>
+            <div class="card stream2">
+                <img class="card_image" src="media/img/vodafone-logo.jpg" alt="Vodafone">
+                <ul style="display: none;">
+                    <li>Must be a broadband customer aswell</li>
+                    <li>Vodafone TV runs over internet which means it is not available everywhere</li>
+                    <li>Internet tv means it can reduce speed of other devices on network</li>
+                    <li>If any issues with broadband - no tv</li>
+                    <li>Internet tv means it can reduce speed of other devices on network</li>
+                    <li>ITV channels cannot be added</li>
+                    <li>Base pack/Plus Pack - no Sky One, Sky Two, Sky Atlantic, Sky Witness or Sky Arts </li>
+                    <li>Sky Sports & Cinema cost the same as Sky - no savings to be made</li>
+                </ul>
+                <button class="bottom_button">Show</button>
+            </div>
+            <div class="card stream3">
+                <img class="card_image" src="media/img/dodgy-box.jpg" alt="Dodgy Boxes">
+                <ul style="display: none;">
+                    <li>Pay one time fee to buy/install but no service after this point - if it stops working, you need to buy a new one</li>
+                    <li>Sky, and other TV companies routinely shut down companies/people who put content on to dodgy boxes</li>
+                    <li>These dodgy boxes can leave your network vulnerable to hackers/viruses</li>
+                </ul>
+                <button class="bottom_button">Show</button>
+            </div>
+            <div class="card stream1">
+                <img class="card_image" src="media/img/saorview-logo.png" alt="Saorview">
+                <ul style="display: none;">
+                    <li>Initial installation costs can be costly</li>
+                    <li>Only 11 channels.</li>
+                    <li>Possible to add English Freeview channels but that will come at an extra cost</li>
+                    <li>No way to access content behind paywall either temporarily or permanently</li>
+                </ul>
+
+                <button class="bottom_button">Show</button>
+            </div>
+            <div class="card stream3">
+                <img class="card_image" src="media/img/netflix-logo.png" alt="Netflix">
+                <ul style="display: none;">
+                    <li>Time delay for new content on general release</li>
+                    <li>Aside from Netflix's own shows/movies, the library is mostly older shows</li>
+                    <li>What you can watch depends on what country you are in</li>
+                </ul>
+                <button class="bottom_button">Show</button>
+            </div>
+            <!--<div class="card stream1">
+                <img class="card_image" src="media/img/amazon-logo.png" alt="Amazon Prime">
+                <ul style="display: none;">
+                    <li>Pay in £ (and conversion fee each month)</li>
+                    <li>Search Engine in Amazon Prime doesn't distinguish between shows/movies
+                    you can watch and shows/movies that you have to buy</li>
+                </ul> 
+                
+                <button class="bottom_button">Show</button>-->
+        </div>
+    </div>
+    </div>
+
+    <div class="row">
+        <div class="banner"></div>
+    </div>
+    <div class="row the-addons">
+        <div class="col-md-4">
+            <h2>Sky Channels</h2>
+            <div class="card stream3">
+                <img class="card_image" src="media/img/sky-atlantic.jpg" alt="Sky Atlantic">
+                <ul style="display: none;">
+                    <li>Sky Atlantic is exclusive to Sky TV and home to shows such as...</li>
+                    <li>Game Of Thrones, Billions, Tin Star, True Detective Escape At Donemora and Fortitude</li>
+                </ul>
+
+                <button class="bottom_button">Show</button>
+            </div>
+            <div class="card stream3">
+                <img class="card_image" src="media/img/sky-witness.jpg" alt="Sky Witness">
+                <ul style="display: none;">
+                    <li>Sky Witness is home to shows such as...</li>
+                    <li>Grey's Anatomy, The Blacklist, Blindspot, Chicago Fire, Madam Secretary, Criminal Minds and the Good Doctor</li>
+                </ul>
+
+                <button class="bottom_button">Show</button>
+            </div>
+            <div class="card stream3">
+                <img class="card_image" src="media/img/sky-arts.jpg" alt="Sky Arts">
+                <ul style="display: none;">
+                    <li>Sky Arts shows theatre, concerts, musical documentaries and art shows</li>
+                    <li>Home to the 'Portrait Artist of the Year' show</li>
+                </ul>
+
+                <button class="bottom_button">Show</button>
+            </div>
+            <div class="card stream3">
+                <img class="card_image" src="media/img/sky-one.jpg" alt="Sky One">
+                <ul style="display: none;">
+                    <li>Sky One is home to shows such as...</li>
+                    <li> 24, Battlestar Galactica, Bones, Caprica, Fringe, Glee,
+                    House, Lie to Me, Lost, Prison Break, The Simpsons, 
+                    Stargate (SG-1, Atlantis, and Universe), Touch, WWE Raw, 
+                    and 'You, Me and the Apocalypse'</li>
+                    <li>New show 'Curfew' on Sky One also</li>
+                </ul>
+
+                <button class="bottom_button">Show</button>
+            </div>
+
+        </div>
+        <div class="col-md-4">
+            <h2>Add-Ons</h2>
+            <div class="card stream1">
+                <img class="card_image" src="media/img/sky-boxsets.png" alt="Boxsets">
+                <div class="card_bottom">
+                    <ul style="display: none;">
+                        <li>€8 per month</li>
+                        <li>Access over 500 boxsets</li>
+                    </ul>
+                    <button class="bottom_button">Show</button>
+                </div>
+            </div>
+            <div class="card stream3">
+                <img class="card_image" src="media/img/HD.png" alt="Sky HD">
+                <ul style="display: none;">
+                    <li>€8 per month</li>
+                    <li>Sky HD bundle comes with access to HD channels for Sky Sports, Sky Atlantic, Witness, Arts, Discovery, History, Nat Geo</li>
+                </ul>
+                <button class="bottom_button">Show</button>
+            </div>
+            <div class="card stream3">
+                <img class="card_image" src="media/img/kids.png" alt="Sky Kids">
+                <ul style="display: none;">
+                    <li>€8 per month</li>
+                    <li>Sky Kids bundle comes with access to 12 channels</li>
+                    <li>Can access Kids app with games and 5000 episodes of kids shows</li>
+                </ul>
+                <button class="bottom_button">Show</button>
+            </div>
+            <div class="card stream1">
+                <img class="card_image" src="media/img/sky-boxsets-hd-legacy.png" alt="HD and Boxsets">
+                <div class="card_bottom">
+                    <ul style="display: none;">
+                        <li>LEGACY PRODUCT</li>
+                        <li>€17 per month</li>
+                        <li>Access over 500 boxsets</li>
+                    </ul>
+                    <button class="bottom_button">Show</button>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-md-4">
+            <h2>Sky Apps</h2>
+            <div class="card stream1">
+                <img class="card_image" src="media/img/sky-go.png" alt="Sky Go">
+                <div class="card_bottom">
+                    <ul style="display: none;">
+                        <li>Watch live and on-demand content</li>
+                        <li>Remote record/download shows to Sky box</li>
+                        <li>Sky Go Extra - €6 - up to 4 screens including PS4/Xbox</li>
+                    </ul>
+                    <button class="bottom_button">Show</button>
+                </div>
+            </div>
+            <div class="card stream3">
+                <img class="card_image" src="media/img/sky-q-app.jpg" alt="Sky Q App">
+                <ul style="display: none;">
+                    <li>Watch live and on-demand content</li>
+                    <li>Download recordings to watch on the go</li>
+                    <li>Pause something on SKy Q box and continue watching on tablet</li>
+                </ul>
+                <button class="bottom_button">Show</button>
+            </div>
+            <div class="card stream3">
+                <img class="card_image" src="media/img/sky-kids-app.png" alt="Sky Kids App">
+                <ul style="display: none;">
+                    <li>Free if you have kids channels as part of subscription</li>
+                    <li>Games and 5000 episodes of kids shows</li>
+                    <li>Parental controls</li>
+                </ul>
+                <button class="bottom_button">Show</button>
+            </div>
+            <div class="card stream1">
+                <img class="card_image" src="media/img/my-sky-app.png" alt="My Sky App">
+                <div class="card_bottom">
+                    <ul style="display: none;">
+                        <li>View subscription and upcoming bills</li>
+                        <li>Pay bills in advance with debit card (smaller bill at end of billing cycle)</li>
+                        <li>Get help and support</li>
+                        <li>View and enter Sky VIP prizedraws</li>
+                    </ul>
+                    <button class="bottom_button">Show</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+    <!-- Scripts located at the bottom of the body to insure page is fully loaded before execution -->
+</body>
+
+</html>
