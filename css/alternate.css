@@ -54,6 +54,20 @@ body{
 	background-color: #191970;
 }
 
+.header{
+	padding: 10px 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+
 h1{
 	font-size: 3em;
 	text-align: center;
@@ -124,9 +138,23 @@ div{
 	color: white;
 }
 
-.three-columns {
+.four-columns {
 	height: auto;
-	
+}
+
+a {
+	text-decoration: none;
+}
+
+.the-conversation {
+	background-color: #008080;
+	color: #FAFAFA;
+	padding-right: 20px;
+	padding-left: 5px;
+}
+
+#notes {
+	word-wrap: break-word;
 }
 
 .the-hardware{
@@ -167,40 +195,37 @@ div{
 	color: #000000;
 }
 .card > img {
-	max-width: 300px;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-.the-hardware > img {
-	max-width: 300px;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-.the-packages > img {
-	max-width: 300px;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-.the-comp > img {
-	max-width: 300px;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-.the-addons > img {
-	max-width: 300px;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-.the-channels {
+	max-width: 225px;
 	
 }
 
+.the-hardware > img {
+	width: auto;
+	
+}
+
+.the-packages > img {
+	width: auto;
+	
+}
+
+.the-comp > img {
+	width: auto;
+	
+}
+
+.the-addons > img {
+	width: auto;
+	
+}
+
+.the-channels {
+	width: auto;
+		
+}
+
 .the-apps {
+	width: auto;
 	
 }
 
