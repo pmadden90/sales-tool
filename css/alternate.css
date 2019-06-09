@@ -335,3 +335,7 @@ nav{
 body {
     background-color: #00008B;
 }
+
+@media screen and (max-width: 420px){
+    li {
+        font-size: 14px }}
