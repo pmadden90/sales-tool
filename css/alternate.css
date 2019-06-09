@@ -173,6 +173,11 @@ a {
 	background-color: #A9A9A9;
 	color: #FAFAFA;
 }
+
+.devices {
+	color: #FAFAFA;
+	background-color: #000000;
+}
 #container
 {
 	display: flex;		/* makes container a flexbox*/
