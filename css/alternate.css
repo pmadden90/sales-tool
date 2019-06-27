@@ -17,32 +17,6 @@
     border-width: 8px;
 }
 
-/*Branded Boxes*/
-.sky-q-box
-
-
-.uod-box
-
-
-.sky-sports-box
-
-
-.sky-cinema-box
-
-
-.sky-arts-box
-
-
-.sky-kids-box
-
-
-.sky-atlantic-box
-
-
-.sky-witness-box
-
-
-.sky-go-box
 
 
 /*Accordion*/
@@ -205,12 +179,20 @@ a {
 	max-width: 225px;
 	
 }
+.the-hardware {
+	background-color: #330099;
+	color: #FAFAFA;
+}
 
 .the-hardware > img {
 	width: auto;
 	
+	
 }
-
+.the-packages {
+	background-color: #330099;
+	color: #FAFAFA;
+}
 .the-packages > img {
 	width: auto;
 	
@@ -219,6 +201,10 @@ a {
 .the-comp > img {
 	width: auto;
 	
+}
+.the-addons {
+	background-color: #01579B;
+	color: #fafafa;
 }
 
 .the-addons > img {
