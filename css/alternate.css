@@ -152,6 +152,10 @@ a {
 	color: #FAFAFA;
 	background-color: #000000;
 }
+
+.smartwatches {
+	background-color: #b76e79;
+}
 #container
 {
 	display: flex;		/* makes container a flexbox*/
