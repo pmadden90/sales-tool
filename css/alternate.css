@@ -1,4 +1,5 @@
 
+
 /*Uniform Boxes*/
 .box {
     border-color: #C0C0C0;
@@ -25,7 +26,7 @@ body{
 	/*background-image: url(img/code-institute.jpg);
 	background-size: cover;
 	color: #ffffff;*/
-	background-color: #191970;
+	background-color: #0A0B37;
 }
 
 .header{
@@ -155,6 +156,7 @@ a {
 
 .smartwatches {
 	background-color: #b76e79;
+	color: #fafafa;
 }
 #container
 {
