@@ -85,7 +85,7 @@ div{
 	border-radius: 4px;
 	display: block;
 	width: 100%;
-	background-color:#000000;
+	background-color:#32BEBF;
 	text-align: center;
 	padding: 0em .75em;
 	text-decoration: none;
@@ -153,17 +153,21 @@ a {
 }
 
 .bb-tv{
-	background-color: #A9A9A9;
+	background-color: #020538; /*Carphone Navy*/
 	color: #FAFAFA;
+}
+
+.bb-tv h2 {
+	margin-left: auto;
 }
 
 .devices {
 	color: #FAFAFA;
-	background-color: #000000;
+	background-color: #020538; /*Carphone Navy*/;
 }
 
 .smartwatches {
-	background-color: #b76e79;
+	background-color: #020538; /*Carphone Navy*/
 	color: #fafafa;
 }
 #container
@@ -217,7 +221,7 @@ a {
 	
 }
 .the-addons {
-	background-color: #01579B;
+	background-color: #020538; /*Carphone Navy*/
 	color: #fafafa;
 }
 

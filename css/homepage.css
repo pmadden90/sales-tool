@@ -2,6 +2,8 @@ main {
     background-color: #020538; /*Carphone Navy*/
     font-family: 'Roboto', sans-serif;
     color: #FAFAFA;
+    width: 100%;
+    overflow-x: hidden;
 }
 
 .top-banner {
@@ -11,6 +13,11 @@ main {
 	height: 35vh;
 	width: 100%;
 	background-position: center center;
+	
+}
+
+.home-grid {
+	margin-bottom: 100px;
 	
 }
 
