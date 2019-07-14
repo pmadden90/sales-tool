@@ -1,4 +1,12 @@
-
+.top-banner {
+	background-image: url(../media/img/carphone-warehouse.jpg);
+    background-repeat: no-repeat;
+	background-color: #020538;
+	height: 35vh;
+	width: 100%;
+	background-position: center center;
+	
+}
 
 /*Uniform Boxes*/
 .box {
@@ -186,7 +194,7 @@ a {
 	
 }
 .the-hardware {
-	background-color: #330099;
+	background-color: #020538;;
 	color: #FAFAFA;
 }
 
@@ -196,7 +204,7 @@ a {
 	
 }
 .the-packages {
-	background-color: #330099;
+	background-color: #020538;;
 	color: #FAFAFA;
 }
 .the-packages > img {
