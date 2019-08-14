@@ -149,3 +149,14 @@ div{
 	display: none;
 	color: #000000;
 }
+
+.cashup {
+	height: 100vh;
+	width: 100vw;
+}
+.cash-calculator {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	width: 60%;
+}

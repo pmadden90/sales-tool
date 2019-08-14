@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Conversation Tool</title>
+    <link rel='stylesheet' href='css/homepage.css' />
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Dosis+Ubuntu' rel='stylesheet' type='text/css'>
+    
+    <script language="javascript" type="text/javascript">
+        
+        function s(num, val) {
+            amount = num * 1; // amount is the num or NaN
+            sum = (!num ? 0 : num) * val; // the sum for that bill or coin
+
+            if (isNaN(amount)) { // if the entire is not a number
+
+                alert(
+                    "' " + num + " ' is not a valid entry and that field will " +
+                    "not be included in the total money calculation."
+                );
+
+                return 0;
+            }
+            else
+                return sum; // if it is OK, send sum back
+        }
+
+        function money(form) { // Each amount is the returned value
+            fif = s(form.fif.value, 50); // for the amount in the s() function
+            twe = s(form.twe.value, 20);
+            ten = s(form.ten.value, 10);
+            fiv = s(form.fiv.value, 5);
+            two = s(form.two.value, 2);
+            one = s(form.one.value, 1);
+            fifcent = s(form.fiftycent.value, .5);
+            twecent = s(form.twentycent.value, .2);
+            tencents = s(form.tencent.value, .1);
+            fivcent = s(form.fivecent.value, .05);
+
+            // add up all the amounts
+            var ttl = fif + twe + ten + fiv + two +
+                one + fifcent + twecent + tencents + fivcent;
+
+            // rounds total to two decimal places
+
+            ttl = "" + ((Math.round(ttl * 100)) / 100);
+
+            dec1 = ttl.substring(ttl.length - 3, ttl.length - 2);
+            dec2 = ttl.substring(ttl.length - 2, ttl.length - 1);
+
+            if (dec1 != '.') { // adds trailing zeroes if necessary
+                if (dec2 == '.') ttl += "0";
+                else ttl += ".00";
+            }
+            form.total.value = "€ " + ttl; // display total amount
+        }
+        //  End -->
+    </script>
+</head>
+
+<body>
+    <main>
+        <div class="row">
+            <div class="top-banner">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 cashup">
+                <form name=coinform align=center>
+            <h2>Cashing Up</h2>
+            <div class="cash-calculator">
+                <table border=1>
+                <tr>
+                    <td align=center>€50</td>
+                    <td align=center>€20</td>
+                    <td align=center>€10</td>
+                    <td align=center>€5</td>
+                    <td align=center>€2</td>
+                    <td align=center>€1</td>
+                </tr>
+                <tr>
+                    <td align=center><input type=text name=fif size=5></td>
+                    <td align=center><input type=text name=twe size=5></td>
+                    <td align=center><input type=text name=ten size=5></td>
+                    <td align=center><input type=text name=fiv size=5></td>
+                    <td align=center><input type=text name=two size=5></td>
+                    <td align=center><input type=text name=one size=5></td>
+                </tr>
+                <tr>
+                    <td colspan=6> </td>
+                </tr>
+                <tr>
+                    <td> </td>
+                    <td align=center>50&cent;</td>
+                    <td align=center>20&cent;</td>
+                    <td align=center>10&cent;</td>
+                    <td align=center>5&cent;</td>
+                </tr>
+                <tr>
+                    <td> </td>
+                    <td align=center><input type=text name=fiftycent size=5></td>
+                    <td align=center><input type=text name=twentycent size=5></td>
+                    <td align=center><input type=text name=tencent size=5></td>
+                    <td align=center><input type=text name=fivecent size=5></td>
+                </tr>
+                <tr>
+                    <td colspan=8 align=center>
+                        <input type=button name=calc value="Calculate" onClick="javascript:money(this.form)">
+                        <input type=text name=total size=10>
+                    </td>
+                </tr>
+            </table>
+            <p>Put the quantity of each note or coin into the respective box to calculate your till.</p>
+            </div>
+            
+        </form>
+            </div>
+        </div>
+        
+
+    </main>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+    <!-- Scripts located at the bottom of the body to insure page is fully loaded before execution -->
+</body>
+
+</html>

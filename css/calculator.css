@@ -1,0 +1,64 @@
+body{
+	font-family: 'Roboto', sans-serif;
+	background-color: #0A0B37;
+}
+
+main {
+    background-color: #020538; /*Carphone Navy*/
+    font-family: 'Roboto', sans-serif;
+    color: #FAFAFA;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+#calc-container{
+  position: relative;
+  width: 90%;
+  border: 2px solid black;
+  border-radius: 12px;
+  margin: 0px auto;
+  padding: 20px 20px 100px 20px;
+  background-color: #CCCCCC;
+}
+
+.calculator-shape {
+    background-color: #CCCCCC;
+}
+
+#logo-corner{
+  position: relative;
+  float: right;
+  margin-top: 15px;
+}
+#logo-corner p{
+  font-size: 20px;
+  font-weight: 900;
+  color: #020538; /*Carphone Navy*/ 
+  border-bottom-color: #32BEBF; /*Carphone Turquoise*/
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+}
+input[type=button] {
+  background: lightGray;
+  width: 15%;
+  font-size: 15px;
+  font-weight: 900;
+  border-radius: 4px;
+  margin-left: 10px;
+  margin-top: 7px;
+}
+input[type=button]:active {
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+
+input[type = text] {
+  position: relative;
+  display: block;
+  width: 90%;
+  margin: 5px auto;
+  font-size: 20px;
+  padding: 10px;
+  box-shadow: 4px 0px 12px black inset;
+}
