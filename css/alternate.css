@@ -160,11 +160,38 @@ a {
 
 .devices {
 	color: #FAFAFA;
-	background-color: #020538; /*Carphone Navy*/;
+	background-color: #020538;
+	/*Carphone Navy*/
+	;
 }
 
 .smartwatches {
-	background-color: #020538; /*Carphone Navy*/
+	background-color: #020538;
+	/*Carphone Navy*/
+	color: #fafafa;
+}
+
+.headphones {
+	background-color: #020538;
+	/*Carphone Navy*/
+	color: #fafafa;
+}
+
+.smartspeakers {
+	background-color: #020538;
+	/*Carphone Navy*/
+	color: #fafafa;
+}
+
+.smart-security {
+	background-color: #020538;
+	/*Carphone Navy*/
+	color: #fafafa;
+}
+
+.smart-lighting {
+	background-color: #020538;
+	/*Carphone Navy*/
 	color: #fafafa;
 }
 #container
