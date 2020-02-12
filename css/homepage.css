@@ -6,6 +6,11 @@ main {
     overflow-x: hidden;
 }
 
+.eir-password {
+    color: #000000;
+    text-align: center;
+}
+
 .top-banner {
 	background-image: url(../media/img/carphone-warehouse.jpg);
     background-repeat: no-repeat;
