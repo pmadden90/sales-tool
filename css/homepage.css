@@ -4,6 +4,7 @@ main {
     color: #FAFAFA;
     width: 100%;
     overflow-x: hidden;
+    min-height: 100vh;
 }
 
 .eir-password {
