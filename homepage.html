@@ -2,117 +2,77 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Conversation Tool</title>
-    <link rel='stylesheet' href='css/homepage.css' />
-    <link rel='stylesheet' href='scss/main.scss' />
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-    <link href='https://fonts.googleapis.com/css?family=Dosis+Ubuntu' rel='stylesheet' type='text/css'>
-    <script type="text/javascript" src="js/checkbox.js"></script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Conversation Tool</title>
+	<link rel='stylesheet' href='css/homepage.css' />
+	<link rel='stylesheet' href='scss/main.scss' />
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+	<link href='https://fonts.googleapis.com/css?family=Dosis+Ubuntu' rel='stylesheet' type='text/css'>
+	<script type="text/javascript" src="js/checkbox.js"></script>
 </head>
 
 <body>
-    <main>
-        <div class="row">
-            <div class="top-banner">
-            </div>
-        </div>
-        </div class="row">
-            <div class="col-md-2 eir-password">
-                <div class="card stream2">
-                    <img class="card_image2" src="media/img/eir-logo.png" alt="Eir">
-                    <h4>Password</h4>
-                    <div class="card_bottom">                   
-                        <ul style="display: none;">
-                            <p><em>Password1</em></p>                        
-                        </ul>
-                        <button class="turq-button">Show</button>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-2 broadband-and-tv">
-                <h2>Multiplay</h2>
-                <div class="card stream8">
-                    <img class="card_image2" src="media/img/multiplay.jpg" alt="Broadband & TV">
-                    <a href="bb-tv.html" target="_blank"><button class="turq-button">Show</button></a>
-                </div>
-            </div>
-            <div class="col-md-3 the-phones">
-                    <h2>Phones</h2>
-                    <div class="card stream8">
-                        <img class="card_image2" src="media/img/plain-phone.jpg" alt="Phones">
-                        <a href="phones.html" target="_blank"><button class="turq-button">Show</button></a>
-                    </div>
-            </div>            
-            <div class="col-md-2 the-accessories">
-                <h2>Accessories</h2>
-                <div class="card stream8">
-                    <img class="card_image2" src="media/img/s3frontier.jpg" alt="Accessories">
-                    <a href="accessories.html" target="_blank"><button class="turq-button">Show</button></a>
-                </div>
-            </div>
-            <div class="col-md-2 sky-tv">
-                <h2>Smart Home</h2>
-                <div class="card stream8">
-                    <img class="card_image2" src="media/img/smarthome/smarthome.jpg" alt="Smarthome">
-                    <a href="smarthome.html" target="_blank"><button class="turq-button">Show</button></a>
-                </div>
-            </div>        
-        </div>
-        <!--<div class="row">
-            <div class="row four-columns home-grid">
-                <div class="col-sm-12 col-md-6 col-lg-6 the-phones">
-                    <h2>Phones</h2>
-                    <div class="card stream8">
-                        <img class="card_image1" src="media/img/plain-phone.jpg" alt="Phones">
-                        <a href="phones.html" target="_blank"><button class="turq-button">Show</button></a>
-                    </div>
-                </div>
-                <div class="col-sm-12 col-md-6 col-lg-6 broadband-and-tv">
-                    <h2>Multiplay</h2>
-                    <div class="card stream8">
-                        <img class="card_image1" src="media/img/multiplay.jpg" alt="Broadband & TV">
-                        <a href="bb-tv.html" target="_blank"><button class="turq-button">Show</button></a>
-                    </div>
-                </div>
-                <div class="col-sm-12 col-md-6 col-lg-6 sky-tv">
-                    <h2>Smart Home</h2>
-                    <div class="card stream8">
-                        <img class="card_image1" src="media/img/smarthome/smarthome.jpg" alt="Smarthome">
-                        <a href="smarthome.html" target="_blank"><button class="turq-button">Show</button></a>
-                    </div>
-                </div>
-                <div class="col-sm-12 col-md-6 col-lg-6 the-accessories">
-                    <h2>Accessories</h2>
-                    <div class="card stream8">
-                        <img class="card_image1" src="media/img/s3frontier.jpg" alt="Accessories">
-                        <a href="accessories.html" target="_blank"><button class="turq-button">Show</button></a>
-                    </div>
-                </div>
-                <!--<div class="col-sm-12 col-md-6 col-lg-6 the-accessories">
-                    <h2>Savings Calculator</h2>
-                    <div class="card stream8">
-                        <img class="card_image1" src="media/img/savings.jpg" alt="Savings Calculator">
-                        <a href="savings.html" target="_blank"><button class="turq-button">Show</button></a>
-                    </div>
-                </div>
-                <div class="col-sm-12 col-md-6 col-lg-6 the-accessories">
-                    <h2>Till Calculator</h2>
-                    <div class="card stream8">
-                        <img class="card_image1" src="media/img/tills.png" alt="Till Calculator">
-                        <a href="tills.html" target="_blank"><button class="turq-button">Show</button></a>
-                    </div>
-                </div>-->
-
-            </div>
-        </div>-->
+	<main>
+		<div class="row">
+			<div class="top-banner">
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-2 eir-password">
+					<div class="card stream2">
+						<img class="card_image2" src="media/img/eir-logo.png" alt="Eir">
+						<h4>Password</h4>
+						<div class="card_bottom">
+							<ul style="display: none;">
+								<p><em>Password1</em></p>
+							</ul>
+							<button class="turq-button">Show</button>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-2 broadband-and-tv">
+					<h2>Multiplay</h2>
+					<div class="card stream8">
+						<img class="card_image2" src="media/img/multiplay.jpg" alt="Broadband & TV">
+						<a href="bb-tv.html" target="_blank"><button class="turq-button">Show</button></a>
+					</div>
+				</div>
+				<div class="col-md-3 the-phones">
+					<h2>Phones</h2>
+					<div class="card stream8">
+						<img class="card_image2" src="media/img/plain-phone.jpg" alt="Phones">
+						<a href="phones.html" target="_blank"><button class="turq-button">Show</button></a>
+					</div>
+				</div>
+				<div class="col-md-2 the-accessories">
+					<h2>Accessories</h2>
+					<div class="card stream8">
+						<img class="card_image2" src="media/img/s3frontier.jpg" alt="Accessories">
+						<a href="accessories.html" target="_blank"><button class="turq-button">Show</button></a>
+					</div>
+				</div>
+				<div class="col-md-2 sky-tv">
+					<h2>Smart Home</h2>
+					<div class="card stream8">
+						<img class="card_image2" src="media/img/smarthome/smarthome.jpg" alt="Smarthome">
+						<a href="smarthome.html" target="_blank"><button class="turq-button">Show</button></a>
+					</div>
+				</div>
+			</div>
+		</div>
 
 
-    </main>
+
+
+
+	</main>
 </body>
-<script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+	crossorigin="anonymous"></script>
 <script src="js/script.js"></script>
 
 </html>
