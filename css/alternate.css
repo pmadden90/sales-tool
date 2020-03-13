@@ -140,7 +140,9 @@ a {
 	background-color: #FAFAFA;
 	
 }
-
+.vod-options {
+    width: 100%
+}
 
 .vodafone-section{
 	background-color: red;
